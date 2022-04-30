@@ -23,3 +23,15 @@ Looping the data from the csv file to scrape the product details for all the web
 Using the pandas module converting the output into .CSV & .JSON file
 
 10min. time taken to Scrape all the data from the web page.
+
+# Bonus Task: Amazon Captcha Solver
+
+**Language** : Python
+
+**Modules** : Selenium, Pandas, Webdriver-Manager, PIL, EasyOCR
+
+The driver object is created to open up the web browser with the help of webdriver-manager module.
+
+The Amazon Captcha Image is extracted by using Pillow, requests, io modules. With that image using EasyOCR we can extract the text from the image with great accuracy ( we can also use pytesseract to extract text from image but it medium accuray than EasyOCR )
+
+Then passing the text into the amazon captcha box followed by Keys.ENTER which solves the captcha.
